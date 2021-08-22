@@ -51,7 +51,7 @@
     "indent": 4,
     "env": {
       "test": {
-        "reportPath": "reports-test"
+        "reportPath": "reports_test"
       }
     }
   }
