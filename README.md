@@ -1,5 +1,14 @@
 # Why I created the clean typescript template
 
+I created this template because typescript have few tutorial or templates to get a complete clean installation ready to code.
+I've been studying Software Design and Architecture, so this is part of acquired knowledge.
+
+## Practices to follow
+
+### reinforce good practices and avoid code smells
+
+https://rules.sonarsource.com/typescript
+
 # Steps by step to configure
 
 ## Typescript
@@ -95,7 +104,7 @@ file: package.json
 ## Eslint && Prettier
 
 npx eslint --init
-npm i -D eslint-config-prettier eslint-plugin-prettier prettier
+npm i -D eslint-config-prettier eslint-plugin-prettier prettier prettier-eslint prettier-eslint-cli
 
 ```yaml
 ------------------------------------------------------

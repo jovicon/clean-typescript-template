@@ -1,7 +1,12 @@
 TODO CONTROL
+  [] Config
+      [] Husky config
 
   [] Tests
-    [x] addTwoNumbers test
-    [x] subtractTwoNumbers test
-    [] multiplyTwoNumbers test - src/index.ts
+      [x] addTwoNumbers test
+      [x] subtractTwoNumbers test
+      [] multiplyTwoNumbers test - src/index.ts
 
+  [] Docker
+      [] Dockerfile
+      [] multi-stage

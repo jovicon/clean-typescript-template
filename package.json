@@ -19,6 +19,8 @@
     "jest-sonar-reporter": "^2.0.0",
     "nodemon": "^2.0.12",
     "prettier": "^2.3.2",
+    "prettier-eslint": "^13.0.0",
+    "prettier-eslint-cli": "^5.0.1",
     "ts-jest": "^27.0.5",
     "ts-node": "^10.2.1",
     "typescript": "^4.3.5"
@@ -26,9 +28,10 @@
   "scripts": {
     "dev": "nodemon --config nodemon.json src/index.ts",
     "dev:debug": "nodemon --config nodemon.json --inspect-brk src/index.ts",
+    "format": "prettier-eslint --eslint-config-path ./.eslintrc.yml --write '**/*.ts'",
+    "lint": "npx prettier --c ./src --config .prettierrc --write",
     "test": "jest --forceExit --coverage --verbose --detectOpenHandles --silent",
-    "lint": "eslint ./src --ext .ts --fix",
-    "build": "npm run build-ts",
+    "build": "npm run lint && npm run build-ts",
     "build-ts": "tsc -p tsconfig.json",
     "prestart": "npm run build",
     "start": "npm run serve",
