@@ -1,17 +1,19 @@
 # Why I created the clean typescript template
 
 # Steps by step to configure
-## Typescript
-* mkdir 'folder-name'
-* cd 'folder-name'
-* npm init ( configure your project name and stuffs )
-* npm i typescript --save-dev
-* npm tsc --init ( You can change the base configuration )
 
+## Typescript
+
+- mkdir 'folder-name'
+- cd 'folder-name'
+- npm init ( configure your project name and stuffs )
+- npm i -D typescript
+- npm tsc --init ( You can change the base configuration )
 
 ## nodemon
-* npm i -D nodemon ts-node @types/node
-    * copy nodemon.json on root path ( you can change this configuration )
+
+- npm i -D nodemon ts-node @types/node
+  - copy nodemon.json on root path ( you can change this configuration )
 
 ```typescript
 ------------------------------------------------------
@@ -34,8 +36,9 @@ file: nodemon.json
 ```
 
 ## Jest
-* npm i -D jest ts-jest @types/jest 
-* npm i -D jest-sonar jest-sonar-reporter ( sonar config is an extra)
+
+- npm i -D jest ts-jest @types/jest
+- npm i -D jest-sonar jest-sonar-reporter ( sonar config is an extra)
 
 ```typescript
 ------------------------------------------------------
@@ -87,4 +90,29 @@ file: package.json
   ...
 }
 ------------------------------------------------------
+```
+
+## Eslint && Prettier
+
+npx eslint --init
+npm i -D eslint-config-prettier eslint-plugin-prettier prettier
+
+```yaml
+------------------------------------------------------
+file: .eslintrc.yml
+------------------------------------------------------
+env:
+  browser: true
+  es2021: true
+extends:
+  - airbnb-base
+parserOptions:
+  ecmaVersion: 12
+  sourceType: module
+  project: 'tsconfig.json'
+plugins:
+  - 'prettier'
+rules: {
+  'prettier/prettier': 'error'
+}
 ```

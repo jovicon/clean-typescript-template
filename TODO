@@ -1,0 +1,7 @@
+TODO CONTROL
+
+  [] Tests
+    [x] addTwoNumbers test
+    [x] subtractTwoNumbers test
+    [] multiplyTwoNumbers test - src/index.ts
+
