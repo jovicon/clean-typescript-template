@@ -17,6 +17,35 @@
 * npm i -D jest ts-jest @types/jest 
 * npm i -D jest-sonar jest-sonar-reporter ( sonar config is an extra)
 
+```typescript
+------------------------------------------------------
+file: jest.config.ts
+------------------------------------------------------
+module.exports = {
+  roots: ["<rootDir>"],
+  reporters: [
+    "default",
+    [
+      "jest-sonar",
+      {
+        outputDirectory: "./",
+        outputName: "test-reporter.xml",
+        reportedFilePath: "absolute",
+      },
+    ],
+  ],
+  testRegex: "(/tests/.*|(\\.|/)(test|spec))\\.ts?$",
+  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
+  transform: {
+    "^.+\\.(ts|tsx)$": "ts-jest",
+  },
+  verbose: false,
+  coveragePathIgnorePatterns: [".*I.*([A-Z]|[a-z]).ts?$"],
+};
+
+------------------------------------------------------
+```
+
 ```json
 ------------------------------------------------------
 file: package.json
