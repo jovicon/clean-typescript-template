@@ -1,0 +1,38 @@
+{
+  "name": "clean-typescript-template",
+  "version": "1.0.0",
+  "description": "This is a ready to use typescript template inspired on clean code book",
+  "main": "src/index.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  },
+  "scripts": {
+    "dev": "nodemon --config nodemon.json src/index.ts",
+    "dev:debug": "nodemon --config nodemon.json --inspect-brk src/index.ts",
+    "test": "jest --forceExit --coverage --verbose --detectOpenHandles --silent",
+    "lint": "eslint ./src --ext .ts --fix",
+    "build": "npm run build-ts",
+    "build-ts": "tsc -p tsconfig.json",
+    "prestart": "npm run build",
+    "start": "npm run serve",
+    "serve": "node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jovicon/clean-typescript-template.git"
+  },
+  "keywords": [
+    "template",
+    "typescript",
+    "clean-code",
+    "clean",
+    "ready-to-use"
+  ],
+  "author": "José Contreras",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jovicon/clean-typescript-template/issues"
+  },
+  "homepage": "https://github.com/jovicon/clean-typescript-template#readme"
+}
