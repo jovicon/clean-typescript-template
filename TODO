@@ -1,12 +1,20 @@
 TODO CONTROL
+
+  [] Docs
+
+
   [] Config
-      [] Husky config
+      
+    [] Husky config
 
-  [] Tests
-      [x] addTwoNumbers test
-      [x] subtractTwoNumbers test
-      [] multiplyTwoNumbers test - src/index.ts
+    [] Docker
+        [] Dockerfile
+        [] multi-stage
 
-  [] Docker
-      [] Dockerfile
-      [] multi-stage
+
+  [] Code
+
+    [] Tests
+        [x] addTwoNumbers test
+        [x] subtractTwoNumbers test
+        [] multiplyTwoNumbers test - src/index.ts
