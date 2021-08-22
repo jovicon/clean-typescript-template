@@ -13,6 +13,26 @@
 * npm i -D nodemon ts-node @types/node
     * copy nodemon.json on root path ( you can change this configuration )
 
+```typescript
+------------------------------------------------------
+file: nodemon.json
+------------------------------------------------------
+{
+  "restartable": "rs",
+  "ignore": [".git", "node_modules/", "dist/", "coverage/"],
+  "watch": ["src"],
+  "execMap": {
+    "ts": "node -r ts-node/register"
+  },
+  "env": {
+    "NODE_ENV": "dev"
+  },
+  "ext": "js,json,ts"
+}
+
+------------------------------------------------------
+```
+
 ## Jest
 * npm i -D jest ts-jest @types/jest 
 * npm i -D jest-sonar jest-sonar-reporter ( sonar config is an extra)
