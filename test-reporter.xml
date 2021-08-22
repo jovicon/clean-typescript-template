@@ -1,0 +1,6 @@
+<testExecutions version="1">
+<file path="D:\code\personal\clean-typescript-template\tests\index.test.ts">
+<testCase name="Index tests:  addTwoNumbers 1 + 2 to equal 3" duration="4" />
+<testCase name="Index tests:  addTwoNumbers 1 + 2 to equal 3" duration="1" />
+</file>
+</testExecutions>
