@@ -145,10 +145,10 @@ rules: {
 
 https://github.com/typicode/husky
 
-npm i -D husky
+- npm i -D husky
 
-npm set-script prepare "husky install"
+- npm set-script prepare "husky install"
 
-npm run prepare
+- npm run prepare
 
-npx husky add .husky/pre-commit "npm run lint && npm run test"
+- npx husky add .husky/pre-commit "npm run lint && npm run test"
