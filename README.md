@@ -3,7 +3,22 @@
 I created this template because typescript have few tutorial or templates to get a complete clean installation ready to code.
 I've been studying Software Design and Architecture, so this is part of acquired knowledge.
 
+## Sources
+
+- [typescript init](https://www.digitalocean.com/community/tutorials/typescript-new-project)
+- [nodemon config](https://futurestud.io/tutorials/typescript-use-nodemon-to-restart-your-server-on-changes)
+- [eslint and prettier - 1](https://dev.to/saurabhggc/add-eslint-prettier-and-airbnb-to-your-project-3mo8)
+- [eslint and prettier - 2](https://www.robinwieruch.de/prettier-eslint)
+- [all about](https://blog.bitsrc.io/tools-for-consistent-javascript-code-style-56a6e93d75d)
+
 ## Practices to follow
+
+plugins:
+
+- nodemon - Debug quickly
+- eslint - great linter
+- prettier - vscode linter sync
+- sonar - avoid smell and bad practices
 
 ### reinforce good practices and avoid code smells
 
@@ -125,3 +140,15 @@ rules: {
   'prettier/prettier': 'error'
 }
 ```
+
+## Husky
+
+https://github.com/typicode/husky
+
+npm i -D husky
+
+npm set-script prepare "husky install"
+
+npm run prepare
+
+npx husky add .husky/pre-commit "npm run lint && npm run test"
